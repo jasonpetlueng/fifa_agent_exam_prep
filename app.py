@@ -42,7 +42,7 @@ agent_image = load_lottie_url("https://assets1.lottiefiles.com/packages/lf20_5r1
 with st.container():
     st.title("FIFA Agent Exam Prep")
     st.subheader("An AI assistant to help you prepare for the FIFA agent exam")
-    st.write("Did you know that more than half of the people who take the FIFA agent exam fail? Rather than pour hundred of pages of dense regulations, let this AI assistant powered by GPT answer your questions, help you study, and guide you along your journey to acing the FIFA agent exam!")
+    st.write("Did you know that almost half of the people who take the FIFA agent exam fail? If you plan on taking the exam and need some help, let this AI assistant powered by GPT answer your questions, help you study, and guide you along your journey to acing the FIFA agent exam!")
     st.write("##")
     st.write("Created by Jason Petlueng")
     st.write("[Jason's LinkedIn Profile](https://www.linkedin.com/in/jasonpetlueng/)")
@@ -99,4 +99,4 @@ with st.container():
         st.empty()
 
 st.write("##")
-st.write("Disclaimer: FIFA Agent Exam Prep is an independent tool and is not affiliated with or endorsed by FIFA.")
+st.write("FIFA Agent Exam Prep is an independent tool and is not affiliated with or endorsed by FIFA.")
