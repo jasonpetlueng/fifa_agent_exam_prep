@@ -75,7 +75,7 @@ with st.container():
         st.header("What is FIFA Agent Exam Prep?")
         st.write("FIFA Agent Exam Prep is an artificial intelligence tool powered by Generative Pre-trained Transformer (GPT). Trained on FIFA’s latest statutes, rules, and regulations, this large language model (LLM) allows users to use natural language to easily access information needed to pass the FIFA Agent Exam.")
         st.header("How can I use FIFA Agent Exam Prep to help me prepare for the exam?")
-        st.write("Think of FIFA Agent Exam Prep as an experienced agent who knows all the ins and out of every rule and regulation regarding player representation. Treat FIFA Agent Exam Prep as a mentor who you can ask questions of to help you understand what rules an agent must follow and what an agent can and can’t do. Not sure if a certain clause is allowed to be included in a contract? Forgot what the fee cap for a certain service is? Ask FIFA Agent Exam Prep!")
+        st.write("Think of FIFA Agent Exam Prep as an experienced agent who knows all the ins and outs of every rule and regulation regarding player representation. Treat FIFA Agent Exam Prep as a mentor who you can ask questions of to help you understand what rules an agent must follow and what an agent can and can’t do. Not sure if a certain clause is allowed to be included in a contract? Forgot what the fee cap for a certain service is? Ask FIFA Agent Exam Prep!")
     with right_column:
         st_lottie(agent_image, height=430)
 
