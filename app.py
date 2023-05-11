@@ -7,6 +7,7 @@ from langchain.llms import OpenAI
 import openai
 
 # insert your OpenAI API key
+openai_apikey = st.secrets["openai_apikey"]
 openai.api_key = openai_apikey
 
 # Load the model
