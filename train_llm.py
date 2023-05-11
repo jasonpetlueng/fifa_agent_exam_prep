@@ -10,6 +10,7 @@ import os
 # Build the LLM
 
 # insert your OpenAI API key
+openai_apikey = st.secrets["openai_apikey"]
 os.environ["OPENAI_API_KEY"] = openai_apikey
 
 # the location of the PFD file used to train your model
