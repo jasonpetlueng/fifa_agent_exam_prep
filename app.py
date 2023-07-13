@@ -85,7 +85,7 @@ with st.container():
     st.header("Get in touch with Jason")
 
     contact_form = """
-    <form action="https://formsubmit.co/jason.petlueng@gmail.com" method="POST">
+    <form action="https://formsubmit.co/7c5921d8f2a05b61a10ef9f111934d36" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Type Your Message Here" required></textarea>
