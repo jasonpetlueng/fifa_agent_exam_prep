@@ -2,18 +2,19 @@ import pickle
 from PyPDF2 import PdfReader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import ElasticVectorSearch, Pinecone, Weaviate, FAISS
+from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
-from langchain.llms import OpenAI
+from langchain.chat_models import ChatOpenAI
+import streamlit as st
 import os
 
 # Build the LLM
 
-# insert your OpenAI API key
+# Use the OpenAI API key from Streamlit secrets
 openai_apikey = st.secrets["openai_apikey"]
 os.environ["OPENAI_API_KEY"] = openai_apikey
 
-# the location of the PFD file used to train your model
+# the location of the PDF file used to train your model
 reader = PdfReader('data/FIFA_Football_Agent_Exam_Study_Materials.pdf')
 
 # read the data from the PDF file and put it into a variable called raw_text
@@ -39,7 +40,8 @@ embeddings = OpenAIEmbeddings()
 docsearch = FAISS.from_texts(texts, embeddings)
 
 # Create chain
-chain = load_qa_chain(OpenAI(model_name="gpt-3.5-turbo"), chain_type="stuff")
+chain = load_qa_chain(ChatOpenAI(model_name="gpt-3.5-turbo"), chain_type="stuff")
+
 
 # Save the model
 with open("llm_model.pkl", "wb") as f:
