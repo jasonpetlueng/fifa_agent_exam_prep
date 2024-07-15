@@ -39,7 +39,7 @@ embeddings = OpenAIEmbeddings()
 docsearch = FAISS.from_texts(texts, embeddings)
 
 # Create chain
-chain = load_qa_chain(OpenAI(), chain_type="stuff")
+chain = load_qa_chain(OpenAI(model_name="gpt-3.5-turbo"), chain_type="stuff")
 
 # Save the model
 with open("llm_model.pkl", "wb") as f:
